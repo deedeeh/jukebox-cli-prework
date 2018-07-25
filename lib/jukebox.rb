@@ -19,6 +19,7 @@ def help
 end
 
 def list(songs)
+  binding.pry
   songs.each_with_index {|song, i| puts "#{i+1}. #{song}"}
 end
 
