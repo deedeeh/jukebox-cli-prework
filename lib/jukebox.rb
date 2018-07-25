@@ -43,9 +43,9 @@ end
 def run(songs) 
   user_input = ""
   help
-  user_input = gets.downcase.chomp
   unless user_input == "exit"
     puts "Please enter a command:"
+    user_input = gets.downcase.chomp
     case user_input 
     when "list"
       list(songs)
